@@ -20,10 +20,7 @@ namespace dacodes.DAO
         {
             try
             {
-                var question = Select(id);
-                dacodesdb.Question.Remove(question);
-                dacodesdb.Entry(question).State = EntityState.Deleted;
-                dacodesdb.SaveChanges();
+                
             }
             catch
             {
@@ -35,9 +32,7 @@ namespace dacodes.DAO
         {
             try
             {
-                dacodesdb.Question.Add(t);
-                dacodesdb.SaveChanges();
-                return t.Id;
+                
             }
             catch
             {
@@ -49,14 +44,7 @@ namespace dacodes.DAO
         {
             try
             {
-                var questionQuery = (from dbDacodes in dacodesdb.Question
-                                     select dbDacodes);
-
-                if (!string.IsNullOrEmpty(t.Question1))
-                    questionQuery = questionQuery.Where(item => item.Question1.Contains(t.Question1));
-                if (t.Idlesson != null)
-                    questionQuery = questionQuery.Where(item => item.Idlesson == t.Idlesson);
-                return questionQuery.ToList();
+               
             }
             catch
             {
@@ -80,8 +68,7 @@ namespace dacodes.DAO
         {
             try
             {
-                dacodesdb.Entry(t).State = EntityState.Modified;
-                dacodesdb.SaveChanges();
+                
             }
             catch
             {

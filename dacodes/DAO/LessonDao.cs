@@ -19,10 +19,7 @@ namespace dacodes.DAO
         {
             try
             {
-                var lesson = Select(id);
-                dacodesdb.Lesson.Remove(lesson);
-                dacodesdb.Entry(lesson).State = EntityState.Deleted;
-                dacodesdb.SaveChanges();
+               
             }
             catch
             {
@@ -34,10 +31,7 @@ namespace dacodes.DAO
         {
             try
             {
-                dacodesdb.Lesson.Add(t);
-                dacodesdb.Entry(t).State = EntityState.Added;
-                dacodesdb.SaveChanges();
-                return t.Id;
+                
             }
             catch
             {
@@ -49,17 +43,7 @@ namespace dacodes.DAO
         {
             try
             {
-                var query = (from dbDacodes in dacodesdb.Lesson
-                             select dbDacodes);
-                if (!string.IsNullOrEmpty(t.Name))
-                    query = query.Where(item => item.Name.Contains(t.Name));
-                if (t.IdCorrelative != null)
-                    query = query.Where(item => item.IdCorrelative == t.IdCorrelative);
-                if (t.Aprovatory != null)
-                    query = query.Where(item => item.Aprovatory == t.Aprovatory);
-                if (t.IdCourse != null)
-                    query = query.Where(item => item.IdCourse == t.IdCourse);
-                return query.ToList();
+                
             }
             catch
             {
@@ -83,8 +67,7 @@ namespace dacodes.DAO
         {
             try
             {
-                dacodesdb.Entry(t).State = EntityState.Modified;
-                dacodesdb.SaveChanges();
+                
             }
             catch
             {
