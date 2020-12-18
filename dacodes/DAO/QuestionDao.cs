@@ -20,7 +20,13 @@ namespace dacodes.DAO
         {
             try
             {
-                
+                Question founded = dacodesdb.Question.Find(id);
+                if (founded == null)
+                {
+                    throw new Exception("NotFound");
+                }
+                dacodesdb.Question.Remove(founded);
+                dacodesdb.SaveChanges();
             }
             catch
             {
@@ -30,45 +36,56 @@ namespace dacodes.DAO
 
         public int Insert(Question t)
         {
+            int result = 0;
             try
             {
-                
+                dacodesdb.Question.Add(t);
+                result = dacodesdb.SaveChanges();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public List<Question> Select(Question t)
         {
+            List<Question> result = new List<Question>();
             try
             {
-               
+                result = dacodesdb.Question.ToList();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public Question Select(int id)
         {
+            Question result = null;
             try
             {
-                return dacodesdb.Question.Find(id);
+                result = dacodesdb.Question.Find(id);
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public void Update(Question t)
         {
             try
             {
-                
+                dacodesdb.Question.Update(t);
+                dacodesdb.SaveChanges();
             }
             catch
             {

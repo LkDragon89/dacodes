@@ -1,0 +1,17 @@
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\dacodes.deps.json
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\dacodes.runtimeconfig.json
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\dacodes.runtimeconfig.dev.json
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\dacodes.dll
+C:\Users\Dell\Desktop\dacodes\dacodes\bin\Debug\netcoreapp2.1\dacodes.pdb
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.AssemblyInfo.cs
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.RazorAssemblyInfo.cache
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.RazorAssemblyInfo.cs
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.RazorTargetAssemblyInfo.cache
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.dll
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.pdb
+C:\Users\Dell\Desktop\dacodes\dacodes\obj\Debug\netcoreapp2.1\dacodes.genruntimeconfig.cache

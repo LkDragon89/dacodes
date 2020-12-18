@@ -1,0 +1,7 @@
+C:\Users\Dell\Desktop\dacodes\TestLogica\bin\Debug\TestLogica.exe.config
+C:\Users\Dell\Desktop\dacodes\TestLogica\bin\Debug\TestLogica.exe
+C:\Users\Dell\Desktop\dacodes\TestLogica\bin\Debug\TestLogica.pdb
+C:\Users\Dell\Desktop\dacodes\TestLogica\obj\Debug\TestLogica.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\dacodes\TestLogica\obj\Debug\TestLogica.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\dacodes\TestLogica\obj\Debug\TestLogica.exe
+C:\Users\Dell\Desktop\dacodes\TestLogica\obj\Debug\TestLogica.pdb

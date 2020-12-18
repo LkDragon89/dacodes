@@ -19,7 +19,13 @@ namespace dacodes.DAO
         {
             try
             {
-                
+                Course founded = dacodesdb.Course.Find(id);
+                if (founded == null)
+                {
+                    throw new Exception("NotFound");
+                }
+                dacodesdb.Course.Remove(founded);
+                dacodesdb.SaveChanges();
             }
             catch
             {
@@ -29,45 +35,56 @@ namespace dacodes.DAO
 
         public int Insert(Course t)
         {
+            int result = 0;
             try
             {
-                
+                dacodesdb.Course.Add(t);
+                result = dacodesdb.SaveChanges();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public List<Course> Select(Course t)
         {
+            List<Course> result = new List<Course>();
             try
             {
-                
+                result = dacodesdb.Course.ToList();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public Course Select(int id)
         {
+            Course result = null;
             try
             {
-               
+                result = dacodesdb.Course.Find(id);
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public void Update(Course t)
         {
             try
             {
-                
+                dacodesdb.Course.Update(t);
+                dacodesdb.SaveChanges();
             }
             catch
             {

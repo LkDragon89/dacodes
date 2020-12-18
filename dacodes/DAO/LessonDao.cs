@@ -19,7 +19,13 @@ namespace dacodes.DAO
         {
             try
             {
-               
+                Lesson founded = dacodesdb.Lesson.Find(id);
+                if (founded == null)
+                {
+                    throw new Exception("NotFound");
+                }
+                dacodesdb.Lesson.Remove(founded);
+                dacodesdb.SaveChanges();
             }
             catch
             {
@@ -29,45 +35,56 @@ namespace dacodes.DAO
 
         public int Insert(Lesson t)
         {
+            int result = 0;
             try
             {
-                
+                dacodesdb.Lesson.Add(t);
+                result = dacodesdb.SaveChanges();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public List<Lesson> Select(Lesson t)
         {
+            List<Lesson> result = new List<Lesson>();
             try
             {
-                
+                result = dacodesdb.Lesson.ToList();
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public Lesson Select(int id)
         {
+            Lesson result = null;
             try
             {
-                return dacodesdb.Lesson.Find(id);
+                result = dacodesdb.Lesson.Find(id);
             }
             catch
             {
                 throw;
             }
+
+            return result;
         }
 
         public void Update(Lesson t)
         {
             try
             {
-                
+                dacodesdb.Lesson.Update(t);
+                dacodesdb.SaveChanges();
             }
             catch
             {
